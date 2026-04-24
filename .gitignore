@@ -1,0 +1,69 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.env
+.env.*
+
+# Build output
+build/
+dist/
+coverage/
+
+# Logs
+logs/
+*.log
+
+# Terraform
+*.tfstate
+*.tfstate.backup
+*.tfvars
+*.tfvars.json
+.terraform/
+.terraform.lock.hcl
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+terraform.tfvars
+terraform.tfvars.json
+
+# Kubernetes
+*.kube/config
+kubectl-debug.yaml
+
+# IDE / editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sln.docstates
+*.sw?
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+Icon?
+
+# Misc
+*.bak
+*.tmp
+*.temp
+*.old
+~*
+
+# Project-specific
+Swiggy/node_modules/
+Swiggy/build/
+Swiggy/.env
