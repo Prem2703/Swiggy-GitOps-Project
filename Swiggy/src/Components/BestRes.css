@@ -1,17 +1,22 @@
-.buttons-grp button{
-    width: 300px;
-    padding: 13px 0;
-    background: transparent;
-    border-radius: 10px;
-    font-weight: 400;
-    border: 1.5px solid rgba(2, 6, 12, 0.1);
-}
-  
-.buttons-grps button{
-    width: 49%;
-    padding: 13px 0px;
-    background: transparent;
-    border-radius: 10px;
-    font-weight: 400;
-    border: 1.5px solid rgba(2, 6, 12, 0.1);
-}
+.cart-sidebar { position: fixed; right: -380px; top: 0; width: 360px; height: 100vh; background: #fff; box-shadow: -4px 0 20px rgba(0,0,0,0.1); z-index: 300; transition: right 0.3s; display: flex; flex-direction: column; }
+.cart-sidebar.open { right: 0; }
+.cart-header { padding: 20px; border-bottom: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; }
+.cart-header h3 { font-size: 18px; font-weight: 700; }
+.cart-close { background: #f5f5f5; border: none; width: 32px; height: 32px; border-radius: 50%; cursor: pointer; font-size: 16px; }
+.cart-items { flex: 1; overflow-y: auto; padding: 16px 20px; }
+.empty-cart { text-align: center; padding: 50px 20px; }
+.empty-cart-icon { font-size: 60px; margin-bottom: 16px; }
+.empty-title { font-weight: 600; color: #555; font-size: 16px; margin-bottom: 8px; }
+.empty-sub { font-size: 13px; color: #999; }
+.cart-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #f5f5f5; }
+.cart-item-left { display: flex; align-items: center; gap: 10px; }
+.cart-item-emoji { font-size: 24px; }
+.cart-item-name { font-size: 14px; font-weight: 600; }
+.cart-item-price { font-size: 12px; color: #666; margin-top: 2px; }
+.qty-controls { display: flex; align-items: center; gap: 8px; }
+.qty-btn { width: 28px; height: 28px; border-radius: 6px; border: none; background: #FC8019; color: #fff; font-size: 16px; cursor: pointer; font-weight: 700; }
+.qty-num { font-size: 14px; font-weight: 700; min-width: 20px; text-align: center; color: #FC8019; }
+.cart-footer { padding: 16px 20px; border-top: 1px solid #eee; }
+.cart-total { display: flex; justify-content: space-between; font-size: 16px; font-weight: 700; margin-bottom: 16px; }
+.checkout-btn { width: 100%; padding: 14px; background: #FC8019; color: #fff; border: none; border-radius: 12px; font-size: 16px; font-weight: 700; cursor: pointer; font-family: 'Poppins', sans-serif; }
+.checkout-btn:hover { background: #e67310; }

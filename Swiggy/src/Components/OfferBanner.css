@@ -1,6 +1,25 @@
-::-webkit-scrollbar{
-    display: none;
+.hero {
+  background: linear-gradient(135deg, #FC8019 0%, #ff9a3c 100%);
+  padding: 50px 24px; text-align: center;
 }
-#banner-img img{
-    cursor: pointer;
+.hero h1 { color: #fff; font-size: 32px; font-weight: 800; margin-bottom: 8px; }
+.hero p { color: rgba(255,255,255,0.85); font-size: 15px; margin-bottom: 28px; }
+.hero-search {
+  display: flex; max-width: 500px; margin: 0 auto 24px;
+  background: #fff; border-radius: 12px; overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
 }
+.hero-search input {
+  flex: 1; padding: 14px 16px; border: none; outline: none;
+  font-size: 14px; font-family: 'Poppins', sans-serif;
+}
+.hero-search button {
+  background: #FC8019; color: #fff; border: none;
+  padding: 14px 24px; font-size: 14px; font-weight: 700;
+  cursor: pointer; font-family: 'Poppins', sans-serif;
+}
+.hero-stats {
+  display: flex; justify-content: center; gap: 32px; margin-top: 16px;
+}
+.stat { color: rgba(255,255,255,0.9); font-size: 14px; }
+.stat strong { color: #fff; font-weight: 700; }
