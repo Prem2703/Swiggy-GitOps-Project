@@ -115,18 +115,24 @@ function App() {
         cart={cart}
         onAddToCart={handleAddToCart}
         onChangeQty={handleChangeQty}
+	onCartOpen={() => setCartOpen(true)}
       />
       <Footer />
 
       <BestRest
-        cart={cart}
-        isOpen={cartOpen}
-        onClose={() => setCartOpen(false)}
-        onChangeQty={handleChangeQty}
-        onPlaceOrder={handlePlaceOrder}
-        user={user}
-        location={location}
-      />
+  cart={cart}
+  isOpen={cartOpen}
+  onClose={() => setCartOpen(false)}
+  onChangeQty={handleChangeQty}
+  onPlaceOrder={handlePlaceOrder}
+  user={user}
+  location={location}
+  onLoginRequired={() => {
+    setCartOpen(false);
+    setShowAuth(true);
+    showToast('🔒 Please login to place order!');
+  }}
+/>
 
       {showAuth && (
         <AuthModal

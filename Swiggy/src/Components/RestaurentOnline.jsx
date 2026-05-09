@@ -129,7 +129,7 @@ const allRestaurants = [
   },
 ];
 
-function RestaurentOnline({ searchQuery, categoryFilter, cart, onAddToCart, onChangeQty }) {
+function RestaurentOnline({ searchQuery, categoryFilter, cart, onAddToCart, onChangeQty, onCartOpen }) {
   const [selectedRest, setSelectedRest] = useState(null);
 
   const filtered = allRestaurants.filter(r => {
@@ -270,7 +270,7 @@ function RestaurentOnline({ searchQuery, categoryFilter, cart, onAddToCart, onCh
                   className="view-cart-btn"
                   onClick={() => {
                     setSelectedRest(null);
-                    document.getElementById('cartOpenBtn') && document.getElementById('cartOpenBtn').click();
+                    onCartOpen();
                   }}
                 >
                   View Cart →
